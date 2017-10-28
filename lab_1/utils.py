@@ -168,16 +168,7 @@ def get_alpha_1(model, ind):
     res = minimize(f_alpha, 1., args=(model, ind), bounds=bnds, tol=10**-5)
     val = res.x
     
-    return val
-
-def get_alpha_2(model, ind):
-    val = 0.
-    
-    coef = 1.
-    arr = (model.x_arr[-1][-1,:] - model.y_arr) ** 2 
-    
-    return val
-    
+    return val    
 
 def get_alpha_5(model, ind):
     val = 0.
