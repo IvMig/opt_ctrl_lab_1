@@ -162,7 +162,6 @@ def f_alpha(alpha, model, ind):
     
     return val
 
-# Не работает. Реализовать надо 2 способ. А после думать, что делать с этим.
 def get_alpha_1(model, ind):
     val = 0.
     bnds = ((0, None),)
